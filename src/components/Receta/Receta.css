@@ -1,0 +1,12 @@
+.card.cargando .btn .txt{
+  display: none;
+}
+.card .btn .spinner{
+  display: none;
+}
+.card.cargando .btn .spinner{
+  display: block;
+}
+.card.cargando .btn .spinner .sk-chase-dot:before {
+  background-color: orange !important;
+}

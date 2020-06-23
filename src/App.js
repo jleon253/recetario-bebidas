@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+
+import Header from './components/Header'
+import Formulario from './components/Formulario'
+import ListaRecetas from './components/ListaRecetas'
+
+import CategoriasProvider from './context/CategoriasContext'
+import RecetasProvider from './context/RecetasContext'
+import ModalProvider from './context/ModalContext'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		/**
+		 * CategoriasProvider ya le permite usar a los componentes hijos,
+		 * todas las varibles (state) y funciones que tenga disponibles.
+		 * Por eso se debe ubicar en la raíz principal.
+		 */
+		<CategoriasProvider>
+			<RecetasProvider>
+				<ModalProvider>
+					<div className='container'>
+            <div className='row'>
+              <Header />
+            </div>
+						<div className='row'>
+							<Formulario />
+						</div>
+						<div className='row px-3'>
+							<ListaRecetas />
+						</div>
+					</div>
+				</ModalProvider>
+			</RecetasProvider>
+		</CategoriasProvider>
+	)
 }
 
-export default App;
+export default App

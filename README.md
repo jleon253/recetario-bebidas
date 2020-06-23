@@ -1,3 +1,15 @@
+# Recetario de bebidas
+
+This small app allows search drinks by ingredients or categories.
+
+**Demo:**
+
+### Dev tools used:
+
+> - HTML, CSS, Bootstrap 4, SweetAlert 2
+> - ES6, React.js (Context), Axios
+> - API (https://www.thecocktaildb.com)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
