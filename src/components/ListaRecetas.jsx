@@ -10,7 +10,7 @@ const ListaRecetas = () => {
   return (
     cargando ? <Spinner /> : (
       (recetas.length === 0) ? null : <section className="col-12">
-        <h2 className="text-center">Drikns list</h2>
+        <h2 className="text-center">Drinks list</h2>
         <div className="row">
           <div className="card-columns">
             {recetas.map(receta => (
