@@ -2,7 +2,7 @@
 
 This small app allows search drinks by ingredients or categories.
 
-**Demo:**
+**Demo:** https://jleon253.github.io/recetario-bebidas/
 
 ### Dev tools used:
 
